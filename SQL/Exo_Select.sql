@@ -1,0 +1,10 @@
+SELECT j.id_judoka, j.nom, j.prenom, j.age, j.sexe, j.id_Niveau, j.email, J.telephone, J.adresse, j.password FROM judokas j;
+SELECT j.nom, j.prenom, j.age, j.sexe, j.id_Niveau, j.email, J.telephone, J.adresse, j.password FROM judokas j;
+SELECT j.nom, j.prenom FROM judokas j;
+SELECT j.id_judoka, j.nom, j.prenom, j.age, j.sexe, j.id_Niveau, j.email, J.telephone, J.adresse, j.password FROM judokas j WHERE j.id_niveau = "7";
+SELECT j.id_judoka, j.nom, j.prenom, j.age, j.sexe, j.id_Niveau, j.email, J.telephone, J.adresse, j.password FROM judokas j WHERE j.age < "30";
+SELECT j.id_judoka, j.nom, j.prenom, j.age, j.sexe, j.id_Niveau, j.email, J.telephone, J.adresse, j.password FROM judokas j WHERE j.age > "40";
+SELECT j.id_judoka, j.nom, j.prenom, j.age, j.sexe, j.id_Niveau, j.email, J.telephone, J.adresse, j.password FROM judokas j WHERE j.telephone LIKE "06%";
+SELECT j.id_judoka, j.nom, j.prenom, j.age, j.sexe, j.id_Niveau, j.email, J.telephone, J.adresse, j.password FROM judokas j WHERE j.nom LIKE "%ch%" OR j.prenom LIKE "%ch%";
+SELECT j.id_judoka, j.nom, j.prenom, j.age, j.sexe, j.id_Niveau, j.email, J.telephone, J.adresse, j.password FROM judokas j WHERE j.email LIKE "%e";
+SELECT j.id_judoka, j.nom, j.prenom, j.age, j.sexe, j.id_Niveau, j.email, J.telephone, J.adresse, j.password FROM judokas j WHERE j.id_judoka BETWEEN 3 AND 16;
